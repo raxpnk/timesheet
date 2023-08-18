@@ -1,0 +1,120 @@
+:host {
+  display: block;
+}
+
+.highlighted {
+    background-color: yellow;
+}
+
+.mainpage{
+	position: initial;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 5px 16px 16px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	width: 100%;	
+	height: 100%;
+	left: 0%;
+	top: 0%;
+	z-index: 900;
+}
+
+
+.userclass{
+	padding-left: 1cm;
+	padding-top: 1.5cm;
+	padding-bottom: 1cm;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 5px 16px 16px 5px rgba(0,0,0,0.2);
+	display: flex;
+	flex-direction: row;
+}
+
+.userdetails{
+	display: flex;
+	flex-direction: column;
+}
+
+.userinput2{
+	padding-top: 1cm;
+	padding-right: 1cm;
+}
+
+.roleclass{
+	font-size: 11px;
+}
+
+.username{
+  padding-right: 2cm;
+}
+
+.navclass{
+	padding-left: 1cm;
+	height: 1cm;
+	color: blue;
+	background-color: white;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.navitem{
+	padding-right: 1cm;
+}
+
+.inputs{
+	position: initial;
+	display: flex;
+	flex-direction: column;
+	z-index: 950;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.2);
+}
+
+.inclass{
+	width: 5cm;
+}
+
+.userinput{
+	width: 3cm;
+	margin-bottom: 1cm;
+	margin-right: 4cm;
+	padding-left: 1cm;
+	display: flex;
+	flex-direction: row;
+}
+
+.inputbox{
+	width: 5cm;
+	padding-top: 0.3cm;
+	border-radius: 0.5px;
+}
+
+.dropdwn{
+	width: 5cm;
+	height: 0.8cm;
+	background-color: white;
+	border-radius: 5px;
+	color: black;
+	z-index: 1001;
+}
+
+
+.dropdwn:hover{
+	background-color: black;
+	color: white;
+	z-index: 10011;
+}
+
+.input2{
+	padding-bottom: 1cm;
+	padding-left: 1cm;
+}
+
+.backbutton{
+	padding-right: 1cm;
+	width: 2.5cm;
+}

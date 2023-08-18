@@ -1,0 +1,58 @@
+<template>
+	<div class="mainpage">
+		<div class="userclass" style={mainPageStyle}>
+			<!--<lightning-icon icon-name="utility:user" alternative-text="User Icon" class="iconclass"></lightning-icon>-->
+			<!--<span class="username2">🧑‍💻</span>-->
+			<div class="userdetails">
+				<span class="username">{capscurrentuser}</span>
+				<p class="roleclass">EMPLOYEE</p>
+				<p class="roleclass">LEAVECOUNT-({leavecount})</p>
+			</div>
+			<lightning-button-icon icon-name="utility:refresh" alternative-text="Refresh" onclick={refreshPage}>
+			</lightning-button-icon>
+		</div>
+		<div class="navclass">
+			<a onclick={navigateToTimesheet} class="navitem">TIMESHEET</a>
+			<!--<a onclick={navigateToLeave} class="navitem">APPROVALS</a>-->
+			<!--<a onclick={navigateToLeave} class="navitem">CALENDER</a>-->
+		</div>
+
+		<div class="inputs" style={mainPageStyle}>
+			<div class="userinput">
+				<div class="userinput2">
+					<lightning-input class="inputbox" label="Search Users" onchange={handleInputChange}
+						value={currentusername} placeholder="USER NAME"></lightning-input>
+					<ul>
+						<template for:each={userList} for:item="user" if:true={showulist}>
+							<li key={user.Id}>
+								<button onclick={handleUserSelection} class="dropdwn" data-id={user.Id} value={user.Name}>{user.Name}</button>
+							</li>
+						</template>
+					</ul>
+				</div>
+				<div class="userinput2">
+					<lightning-input type="date" placeholder="YYYY-MM-DD" onchange={handledate} value={leavedate}
+						label="Search Date" class="inputbox"></lightning-input>
+				</div>
+				<div class="userinput2">
+					<lightning-input type="text" label="Leave Reason" class="inputbox" onchange={handlereason}
+						value={leavereason} placeholder="Reason"></lightning-input>
+				</div>
+				<div class="userinput2">
+					<lightning-input type="number" label="Count" class="inputbox" onchange={handlecount}
+						value={totaldays} placeholder="Num Of Days"></lightning-input>
+				</div>
+			</div>
+
+
+			<div class="input2">
+				<div class="addbackclass">
+					<lightning-button label="BACK" onclick={navigateToTimesheet} class="backbutton"
+						variant="destructive"></lightning-button>
+					<lightning-button label="APPLY" onclick={handleaddleave} class="backbutton" variant="success">
+					</lightning-button>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
