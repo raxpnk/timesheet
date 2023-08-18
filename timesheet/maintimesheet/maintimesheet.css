@@ -1,0 +1,192 @@
+:host {
+  display: block;
+}
+
+.highlighted {
+    background-color: rgba(198, 34, 34, 0.948);
+}
+
+.mainpage{
+	position: initial;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 5px 16px 16px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	width: 100%;	
+	height: 100%;
+	left: 0%;
+	top: 0%;
+	z-index: 900;
+}
+
+.linkbutton{
+	padding-left: 2cm;
+}
+
+.nn{
+	padding-left: 14.9cm;
+	font-weight: bold;
+	font-size: 8px;
+	color: red;
+}
+
+
+.finalsave{
+	padding:1cm;
+	padding-left: 17.2cm;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.userclass{
+	padding-left: 1cm;
+	padding-top: 1.5cm;
+	padding-bottom: 1cm;
+	font-size: 25px;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 5px 16px 16px 5px rgba(0,0,0,0.2);
+	display: flex;
+	flex-direction: row;
+}
+
+.userdetails{
+	display: flex;
+	flex-direction: column;
+}
+
+.roleclass{
+	font-size: 11px;
+}
+
+.username{
+  padding-right: 2cm;
+}
+
+.username2{
+	padding-right: 1cm;
+}
+
+.iconclass{
+	padding-right: 1cm;
+	size: 1.5cm;
+	height: 3cm;
+	width: 2cm;
+}
+
+
+.inputs{
+	position: initial;
+	display: flex;
+	flex-direction: row;
+	z-index: 950;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	align-items: center;
+	box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.2);
+	padding-top: 1cm;
+	padding-bottom: 1cm;
+}
+
+.userinput{
+	width: 3cm;
+	margin-bottom: 1cm;
+	margin-right: 4cm;
+	padding-left: 1cm;
+}
+
+.dropdwn{
+	width: 5cm;
+	height: 0.8cm;
+	background-color: white;
+	border-radius: 5px;
+	color: black;
+	z-index: 1001;
+}
+
+
+.dropdwn:hover{
+	background-color: black;
+	color: white;
+	z-index: 10011;
+}
+
+.inputbox{
+	width: 5cm;
+	padding-top: 0.3cm;
+	border-radius: 0.5px;
+}
+
+
+.inputbox2{
+	width: 5cm;
+	border-radius: 0.5px;
+	z-index: 1001;
+}
+
+.tables{
+	position: relative;
+	padding-top: 0cm;
+	padding-bottom: 1cm;
+	margin: 1cm;
+	top: 10%;
+}
+
+.DataTableExample{
+	font-size: 11px;
+}
+
+.newbutton{
+	margin-bottom: 0.5cm;
+	padding-left: 1cm;
+	padding-right: 1cm;
+}
+
+.newbutton2{
+	padding-top: 0.7cm;
+	flex-direction: row;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.newbutton3{
+	padding-right: 0.5cm;
+}
+
+.textclass{
+	padding-left: 3cm;
+	font-weight: bold;
+	font-size: 11px;
+	padding-right: 1cm;
+}
+
+.showpopclass {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1cm;
+  border : 2px solid black;
+  box-shadow: 5px 16px 16px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.navclass{
+	padding-left: 1cm;
+	height: 1cm;
+	color: blue;
+	background-color: white;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.navitem{
+	padding-right: 1cm;
+}
